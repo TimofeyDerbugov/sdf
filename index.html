@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Математика</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">📐 Математика</div>
+
+  <div class="burger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="menu">
+    <button onclick="selectClass('5A')">5А</button>
+    <button onclick="selectClass('6A')">6А</button>
+    <button onclick="selectClass('7A')">7А</button>
+    <button onclick="selectClass('8A')">8А</button>
+    <button onclick="selectClass('9A')">9А</button>
+    <button onclick="selectClass('10A')">10А</button>
+    <button onclick="selectClass('11A')">11А</button>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <h2>📌 Актуальные задания</h2>
+    <div class="grid" id="activeTasks"></div>
+  </section>
+
+  <section>
+    <h2>📁 Прошедшие задания</h2>
+    <div class="grid faded" id="pastTasks"></div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
