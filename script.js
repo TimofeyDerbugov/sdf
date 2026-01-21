@@ -62,6 +62,8 @@ function render() {
         <div class="card-title">${task.title}</div>
         <div>${task.description}</div>
         <div>${task.date}</div>
+        <div><a href="${task.image}">Открыть ДЗ</a><div>
+        <div><a href="${task.image}" download>Скачать ДЗ</a><div></div>
       </div>
     `;
 
