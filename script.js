@@ -89,3 +89,36 @@ function closeModal(e) {
     document.getElementById("modalImg").src = "";
   }
 }
+
+function createCard(task) {
+  const div = document.createElement("div");
+  div.className = "card";
+
+  const today = new Date();
+  const deadline = new Date(task.date);
+
+  // Обнуляем время
+  today.setHours(0,0,0,0);
+  deadline.setHours(0,0,0,0);
+
+  const diffDays = Math.floor(
+    (deadline - today) / (1000 * 60 * 60 * 24)
+  );
+
+  if (diffDays === 0) {
+    div.classList.add("today");
+  } else if (diffDays === 1) {
+    div.classList.add("soon");
+  }
+
+  div.innerHTML = `
+    <img src="${task.image}">
+    <div class="card-content">
+      <div class="card-title">${task.title}</div>
+      <div>${task.description}</div>
+      <div class="card-date">📅 ${task.date}</div>
+    </div>
+  `;
+
+  return div;
+}
