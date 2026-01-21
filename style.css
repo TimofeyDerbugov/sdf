@@ -2,18 +2,6 @@
 * {
   box-sizing: border-box;
 }
-div a {
-    padding: 8px;
-    border: 2px solid #3498db;
-    color: #3498db;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: border-color 0.3s, color 0.3s;
-}
-div a:hover {
-    border-color: #e74c3c;
-    color: #e74c3c;
-}
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -36,7 +24,7 @@ header {
 
 .logo {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 34px;
 }
 
 /* MENU */
@@ -118,6 +106,7 @@ h2 {
 .card-title {
   font-weight: bold;
   margin-bottom: 4px;
+  font-size: 24px;
 }
 
 .card-date {
@@ -230,4 +219,26 @@ h2 {
   .burger {
     display: flex;
   }
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: rgb(4, 22, 142)
+}  
+
+a {
+    text-decoration: none;
+    font-size: 23px;
+    color: #254e86;
+    white-space: nowrap;
+    /* background-color: #41689f; */
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* background-color: #3040ac; */
+    border-radius: 30px;
+}
+
+.slk {
+  padding-bottom: 10px;
 }
